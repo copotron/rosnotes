@@ -4,6 +4,14 @@ roslaunch pointgrey_camera_driver camera.launch camera_serial:=xxxxxxx1
 roslaunch pointgrey_camera_driver camera.launch camera_serial:=xxxxxxx2
 
 rosrun image_view image_view image:=/camera/image_color
+
+#To use sterio launch file 
+
+roslaunch pointgrey_camera_driver cam.launch
+
+rosrun image_view image_view image:=/camera/left/image_color
+rosrun image_view image_view image:=/camera/right/image_color
+
 ```
 
 ## Install Velodyne packages
