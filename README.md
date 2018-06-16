@@ -1,3 +1,10 @@
+## Swift Nav 
+
+```
+roslaunch piksi_multi_rtk_ros piksi_multi_rover.launch
+
+```
+
 ## Point grey cameras
 ```
 roslaunch pointgrey_camera_driver camera.launch camera_serial:=xxxxxxx1
@@ -7,7 +14,7 @@ rosrun image_view image_view image:=/camera/image_color
 
 #To use sterio launch file 
 
-roslaunch pointgrey_camera_driver cam.launch
+roslaunch pointgrey_camera_driver copotron_cam.launch
 
 rosrun image_view image_view image:=/camera/left/image_color
 rosrun image_view image_view image:=/camera/right/image_color
